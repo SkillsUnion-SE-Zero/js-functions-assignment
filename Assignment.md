@@ -7,12 +7,18 @@
 Define a function named `youRock` that accepts a persons name as a string argument and returns a string using that name.
 
 Example:
+
 > You rock Sam!
 
 If the function does not receives a string as a parameter then it should return `undefined`
 
 ```js
 // YOUR ANSWER
+function youRock(name) {
+  if (name === typeof "string");
+  return "You rock " + name;
+}
+console.log(youRock("Sam!"));
 ```
 
 ## Problem #2: Square
@@ -27,6 +33,10 @@ square(2); // 4
 
 ```js
 // YOUR ANSWER
+function square(Num) {
+  return Num ** 2;
+}
+console.log(square(5));
 ```
 
 ## Problem #3: Calculator
@@ -36,12 +46,12 @@ Write a function that will add, subtract, multiply and divide two numbers and re
 Examples:
 
 ```js
-calculator(1, 2, "add") // 3
-calculator(1, 2, "subtract") // -1
-calculator(1, 2, "divide") // .5
-calculator(1, 2, "multiply") // 2
-calculator(1, 2, "something else") // Calculator can only add, subtract, multiply and divide
-calculator("Dog", 2, "add") // Calculator only accepts numbers
+calculator(1, 2, "add"); // 3
+calculator(1, 2, "subtract"); // -1
+calculator(1, 2, "divide"); // .5
+calculator(1, 2, "multiply"); // 2
+calculator(1, 2, "something else"); // Calculator can only add, subtract, multiply and divide
+calculator("Dog", 2, "add"); // Calculator only accepts numbers
 ```
 
 ```js
@@ -60,9 +70,9 @@ Define a function that accepts a number argument.
 Example:
 
 ```js
-fizzBuzz(3) // Fizz
-fizzBuzz(15) // Fizz Buzz
-fizzBuzz(7) // 7
+fizzBuzz(3); // Fizz
+fizzBuzz(15); // Fizz Buzz
+fizzBuzz(7); // 7
 ```
 
 ### Resources
@@ -74,6 +84,7 @@ fizzBuzz(7) // 7
 Feel free to research resources for more information.
 
 ## Bonus Problems (Optional)
+
 ### Problem 1: Dice Roller
 
 1. Define a function named `rollDice`
@@ -83,7 +94,7 @@ Feel free to research resources for more information.
 **Example:**
 
 ```js
-rollDice() // Dice rolled are 3 and 6 with the sum of 9
+rollDice(); // Dice rolled are 3 and 6 with the sum of 9
 ```
 
 _Hint: Lookup `Math.random()`_
@@ -100,8 +111,9 @@ _Hint: Lookup `Math.random()`_
 **Example:**
 
 ```js
-rollDice(3) // Dice rolled are 3, 6, and 7 with the sum of 16
+rollDice(3); // Dice rolled are 3, 6, and 7 with the sum of 16
 ```
+
 ### Problem 1: [Rock, Paper, Scissors](https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors)
 
 1. Define a function named `playGame`
@@ -112,7 +124,7 @@ rollDice(3) // Dice rolled are 3, 6, and 7 with the sum of 16
 **Example:**
 
 ```js
-playGame('rock'); // Computer picked: paper. User picked: rock. User lose.
+playGame("rock"); // Computer picked: paper. User picked: rock. User lose.
 ```
 
 _Hint: Lookup `Math.random()`_
